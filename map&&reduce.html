@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //map():接受一个函数,将原来这个数组中的所有元素处理以后返回
+
+        let arr = [1, 2, 3]
+        arr1 = arr.map(item => item * 2)
+        console.log(arr1)
+
+
+        //reduce()：维数组中的每一个元素依次执行回调函数（不包括已删除的）
+        arr = arr.reduce((a, b) => {
+            console.log("上一次处理后：" + a)
+            console.log("当前正在处理：" + b)
+            return a + b
+        }, 1)
+        console.log(arr)
+    </script>
+</body>
+</html>

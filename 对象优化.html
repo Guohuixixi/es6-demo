@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        // 对象的内置函数
+        const person={
+            name: "lgh",
+            age: 21,
+            language: ["go", "java", "js"],
+        }
+        console.log(Object.keys(person));
+        console.log(Object.values(person));
+        console.log(Object.entries(person));
+        //对象合并
+        const target = {a:1};
+        const sorce1 = {b:2};
+        const sorce2 = {c:3};
+        Object.assign(target,sorce1,sorce2)
+        console.log(target)
+
+        const age=21
+        const name=""
+        const person1={age:age,name:name}
+        const person2={age,name}
+        console.log(person2);
+
+    </script> -->
+    <!-- <script>
+        //声明对象书写方式
+        let person = {
+            name: "Lgh",
+            eat: function (food) {
+                console.log(`我吃了${food}`)
+            },
+            eat1: food => console.log(`我吃了 ${food}`),
+            eat3(food) {
+                console.log(`我吃了 ${food}`)
+            }
+
+        }
+        person.eat("香蕉")
+        person.eat1("苹果")
+        person.eat3("肥肠")
+    </script> -->
+    <!-- //对象拓展运算符
+    <script>
+        //拷贝对象
+        let p1 = {
+            name: "zlj",
+            age: 19
+        }
+        let someone = {
+            ...p1
+        }
+        p1.age=p1.age+1
+        console.log(someone)
+        //{name: "zlj", age: 19}
+    </script> -->
+    <!-- <script>
+        //对象合并
+        let name = {
+            name: "zlj"
+        }
+        let age = {
+            age: 19
+        }
+
+        let someone = {
+            ...name,
+            ...age
+        }
+        console.log(someone)
+        //{name: "zlj", age: 19}
+    </script>
+</body>
+</html>

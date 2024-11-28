@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        const a = 3
+        a = 4
+        //Uncaught TypeError: Assignment to constant variable. at let&const.html:36
+    </script> -->
+    <!-- <script>
+         //var声明的变量往往会越域
+        //let声明的变量有严格的局部作用域
+        {
+         var a=1
+         let b=2
+         }
+         console.log(a)
+         console.log(b)
+         //Uncaught ReferenceError: b is not defined at let&const.html:19
+    </script> -->
+
+    <!-- <script>
+         //var可以声明多次,let只可以声明一次
+       var a=1
+       var a=3
+       let b=2
+       let b=4
+       console.log(a)
+       console.log(b)
+       //Uncaught SyntaxError: Identifier 'b' has already been declared
+        </script> -->
+    <script>
+        //var会变量提升
+        //let不会变量提升
+        console.log(a)
+        var a = 1
+        console.log(b)
+        let b = 2
+        //let&const.html:33 Uncaught ReferenceError: b is not defined at let&const.html:33
+    </script>
+</body>
+
+</html>

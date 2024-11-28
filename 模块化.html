@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+</head>
+<body>
+    
+</body> 
+<script type="module">
+// import 语法
+// import 组件名 from js文件路径
+// 组件名 : {需要导入的组件}  多个用逗号分隔，  用过组件有很多可以写成* ，就不需要{} ,但是还需要使用as取别名
+// 非默认组件一定要用大括号    ，默认组件不能写在大括号里面
+
+import xxx,{girl} from './js/user.js'
+
+console.info("---"+Object.entries(xxx));
+console.info("----"+Object.entries(girl));
+
+</script>
+
+</html>
